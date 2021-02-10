@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+
+import '../../styles/styles.scss';
 
 // Components
 import Navbar from '../Navbar/Navbar';
@@ -175,7 +176,10 @@ class App extends Component {
             { logo: NetsuiteLogo, name: 'Netsuite' },
         ],
         headShot: HeadShot,
-        bio: 'I’m Mike, a Front End Developer currently working for Boombah Inc.  I am experienced in designing and building user-friendly projects from the ground up and focused on finding new ways to solve everyday problems through technology.  I am a fast learner, a hard worker, and a flexible team player who loves attacking new problems head-on. <br><br> In my free time I enjoy hanging out with my wife Jenni and cat Lucy.  I also play and write music, and my compositions and songs have been used by NBC, FOX Sports, A&E, Comedy Central, MTV, and others.',
+        bio: [
+            'I’m Mike, a Front End Developer currently working for Boombah Inc.  I am experienced in designing and building user-friendly projects from the ground up and focused on finding new ways to solve everyday problems through technology.  I am a fast learner, a hard worker, and a flexible team player who loves attacking new problems head-on.',
+            'In my free time I enjoy hanging out with my wife Jenni and cat Lucy.  I also play and write music, and my compositions and songs have been used by NBC, FOX Sports, A&E, Comedy Central, MTV, and others.',
+        ],
         contactLinks: [
             { text: 'Email', url: '/' },
             { text: 'LinkedIn', url: '/' },

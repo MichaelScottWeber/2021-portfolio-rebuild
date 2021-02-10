@@ -11,6 +11,12 @@ class About extends Component {
         )
     })
 
+    bio = this.props.bio.map(par => {
+        return (
+            <p key={par}>{par}</p>
+        )
+    })
+
     render() { 
         return (  
             <section className="About">
@@ -19,7 +25,7 @@ class About extends Component {
                     <img src={this.props.headShot} alt="Michael Weber" />
                     <ul>{this.contactLinksList}</ul>
                 </div>
-                <p>{this.props.bio}</p>
+                <div>{this.bio}</div>
             </section>
         );
     }

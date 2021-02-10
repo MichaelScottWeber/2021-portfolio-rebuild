@@ -5,7 +5,7 @@ class Footer extends Component {
     render() { 
         return (  
             <footer className="Footer">
-                <p>Copyright 2021 Michael  Weber.  Made with React.  Illustration by Diana Valeanu of Absurd.Design.  Icons by Spencer Harrison from the Noun Project.</p>
+                <p>Copyright 2021 Michael  Weber.  Made with React.  Illustration by Diana Valeanu of <a href="https://absurd.design/">Absurd.Design</a>.  Icons by Spencer Harrison from the <a href="https://thenounproject.com/">Noun Project</a>.</p>
             </footer>
         );
     }
