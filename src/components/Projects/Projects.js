@@ -5,7 +5,7 @@ class Projects extends Component {
 
     projectList = this.props.projects.map(project => {
         return (
-            <li>
+            <li key={project.name}>
                 <img src={project.img1} alt={`Screenshots of ${project.name}`} />
                 <h3>{project.name}</h3>
                 <a href={project.siteUrl}>View Site</a>

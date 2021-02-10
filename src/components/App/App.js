@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// Components
 import Navbar from '../Navbar/Navbar';
 import Hero from '../Hero/Hero';
 import Projects from '../Projects/Projects';
@@ -8,6 +9,55 @@ import Skills from '../Skills/Skills';
 import Technology from '../Technology/Technology';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
+
+// Project Images
+import FiveDayForecast1 from '../../images/5DayForecast.png';
+import FiveDayForecast2 from '../../images/5DayForecast2.png';
+import GuitarQuiz1 from '../../images/GuitarQuiz.png';
+import GuitarQuiz2 from '../../images/GuitarQuiz2.png';
+import MusicPortfolio1 from '../../images/MusicPortfolio.png';
+import MusicPortfolio2 from '../../images/MusicPortfolio2.png';
+import PizzaOrder1 from '../../images/PizzaOrder.png';
+import PizzaOrder2 from '../../images/PizzaOrder2.png';
+
+// Skill Icons
+import BulbIcon from '../../images/bulb-icon.svg';
+import ConnectionIcon from '../../images/connection-icon.svg';
+import GlassesIcon from '../../images/glasses-icon.svg';
+import PencilIcon from '../../images/pencil-icon.svg';
+import PhoneIcon from '../../images/phone-icon.svg';
+
+// Tech Logos
+import AdobeLogo from '../../images/adobe-logo.svg';
+import AngularLogo from '../../images/angular-logo.svg';
+import AppleLogo from '../../images/apple-logo.svg';
+import BootstrapLogo from '../../images/bootstrap-logo.svg';
+import CSSLogo from '../../images/css-logo.svg';
+import ExpressLogo from '../../images/express-logo.svg';
+import FigmaLogo from '../../images/figma-logo.svg';
+import GithubLogo from '../../images/github-logo.svg';
+import GoogleLogo from '../../images/google-logo.svg';
+import HTMLLogo from '../../images/html-logo.svg';
+import IllustratorLogo from '../../images/illustrator-logo.svg';
+import JQueryLogo from '../../images/jquery-logo.svg';
+import JSLogo from '../../images/js-logo.svg';
+import MongoDBLogo from '../../images/mongodb-logo.svg';
+import NetlifyLogo from '../../images/netlify-logo.svg';
+import NetsuiteLogo from '../../images/netsuite-logo.svg';
+import NodeLogo from '../../images/node-logo.svg';
+import NotionLogo from '../../images/notion-logo.svg';
+import NpmLogo from '../../images/npm-logo.svg';
+import PhotoshopLogo from '../../images/photoshop-logo.svg';
+import ReactLogo from '../../images/react-logo.svg';
+import SassLogo from '../../images/sass-logo.svg';
+import SlackLogo from '../../images/slack-logo.svg';
+import ThreeLogo from '../../images/threejs-logo.svg';
+import VSCodeLogo from '../../images/vscode-logo.svg';
+import VueLogo from '../../images/vue-logo.svg';
+import ZoomLogo from '../../images/zoom-logo.svg';
+
+// Headshot Image
+import HeadShot from '../../images/profilepic.jpg';
 
 class App extends Component {
     state = {
@@ -21,8 +71,8 @@ class App extends Component {
         projects: [
             {
                 name: 'PizzaOrder',
-                img1: '',
-                img2: '',
+                img1: PizzaOrder1,
+                img2: PizzaOrder2,
                 color: '#019889',
                 siteUrl: 'https://pizza-order.netlify.app/',
                 sourceUrl: 'https://github.com/MichaelScottWeber/pizza-order-app',
@@ -31,8 +81,8 @@ class App extends Component {
             },
             {
                 name: '5DayForecast',
-                img1: '',
-                img2: '',
+                img1: FiveDayForecast1,
+                img2: FiveDayForecast2,
                 color: '#437b98',
                 siteUrl: 'https://5-day-forecast.netlify.com/',
                 sourceUrl: 'https://github.com/MichaelScottWeber/Five-Day-Forcast',
@@ -41,8 +91,8 @@ class App extends Component {
             },
             {
                 name: 'GuitarQuiz',
-                img1: '',
-                img2: '',
+                img1: GuitarQuiz1,
+                img2: GuitarQuiz2,
                 color: '#cd7328',
                 siteUrl: 'https://guitar-quiz.netlify.com/',
                 sourceUrl: 'https://github.com/MichaelScottWeber/react-quiz',
@@ -51,8 +101,8 @@ class App extends Component {
             },
             {
                 name: 'MusicPortfolio',
-                img1: '',
-                img2: '',
+                img1: MusicPortfolio1,
+                img2: MusicPortfolio2,
                 color: '#725046',
                 siteUrl: 'https://www.michaelwebermusic.com/',
                 sourceUrl: 'https://github.com/MichaelScottWeber/Michael-Weber-Music',
@@ -62,69 +112,69 @@ class App extends Component {
         ],
         skills: [
             {
-                icon: '',
+                icon: GlassesIcon,
                 name: 'Accessibility',
                 text: 'Experienced in semantic HTML structure, screen readers,  and in writing code that is WCAG 2.1 compliant.',
             },
             {
-                icon: '',
+                icon: PhoneIcon,
                 name: 'Mobile-Friendly',
                 text: 'Projects that look good on all devices and all browsers. If it doesn’t work on mobile, then it doesn’t work.',
             },
             {
-                icon: '',
+                icon: PencilIcon,
                 name: 'Image Design',
                 text: 'A keen eye for design, and skilled with Adobe Photoshop, Illustrator, and Figma.',
             },
             {
-                icon: '',
+                icon: ConnectionIcon,
                 name: 'Collaboration',
                 text: 'Experienced working onsite and remotely in cross-disceplanary teams. Excellent communication skills.',
             },
             {
-                icon: '',
+                icon: BulbIcon,
                 name: 'Self-Motivation',
                 text: 'A self-taught developer who isn’t afraid of a challenge and loves to attack problems head on. Always learning new things.',
             },
         ],
         frontEndTech: [
-            { logo: '', name: 'HTML5' },
-            { logo: '', name: 'CSS3' },
-            { logo: '', name: 'JavaScript' },
-            { logo: '', name: 'React' },
-            { logo: '', name: 'Vue' },
-            { logo: '', name: 'AngularJS' },
-            { logo: '', name: 'SASS' },
-            { logo: '', name: 'Bootstrap' },
-            { logo: '', name: 'jQuery' },
+            { logo: HTMLLogo, name: 'HTML5' },
+            { logo: CSSLogo, name: 'CSS3' },
+            { logo: JSLogo, name: 'JavaScript' },
+            { logo: ReactLogo, name: 'React' },
+            { logo: VueLogo, name: 'Vue' },
+            { logo: AngularLogo, name: 'AngularJS' },
+            { logo: SassLogo, name: 'SASS' },
+            { logo: BootstrapLogo, name: 'Bootstrap' },
+            { logo: JQueryLogo, name: 'jQuery' },
         ],
         backEndTech: [
-            { logo: '', name: 'Node' },
-            { logo: '', name: 'Express' },
-            { logo: '', name: 'MongoDB' },
+            { logo: NodeLogo, name: 'Node' },
+            { logo: ExpressLogo, name: 'Express' },
+            { logo: MongoDBLogo, name: 'MongoDB' },
         ],
         imageDesignTech: [
-            { logo: '', name: 'Adobe CC' },
-            { logo: '', name: 'Photoshop' },
-            { logo: '', name: 'Illustrator' },
-            { logo: '', name: 'Figma' },
+            { logo: AdobeLogo, name: 'Adobe CC' },
+            { logo: PhotoshopLogo, name: 'Photoshop' },
+            { logo: IllustratorLogo, name: 'Illustrator' },
+            { logo: FigmaLogo, name: 'Figma' },
         ],
         collaborationTech: [
-            { logo: '', name: 'Slack' },
-            { logo: '', name: 'Zoom' },
-            { logo: '', name: 'Notion' },
-            { logo: '', name: 'Google' },
+            { logo: SlackLogo, name: 'Slack' },
+            { logo: ZoomLogo, name: 'Zoom' },
+            { logo: NotionLogo, name: 'Notion' },
+            { logo: GoogleLogo, name: 'Google' },
         ],
         miscTech: [
-            { logo: '', name: 'Apple' },
-            { logo: '', name: 'VS Code' },
-            { logo: '', name: 'Github' },
-            { logo: '', name: 'NPM' },
-            { logo: '', name: 'Netlify' },
-            { logo: '', name: 'ThreeJS' },
-            { logo: '', name: 'Netsuite' },
+            { logo: AppleLogo, name: 'Apple' },
+            { logo: VSCodeLogo, name: 'VS Code' },
+            { logo: GithubLogo, name: 'Github' },
+            { logo: NpmLogo, name: 'NPM' },
+            { logo: NetlifyLogo, name: 'Netlify' },
+            { logo: ThreeLogo, name: 'ThreeJS' },
+            { logo: NetsuiteLogo, name: 'Netsuite' },
         ],
-        headShot: '',
+        headShot: HeadShot,
         bio: 'I’m Mike, a Front End Developer currently working for Boombah Inc.  I am experienced in designing and building user-friendly projects from the ground up and focused on finding new ways to solve everyday problems through technology.  I am a fast learner, a hard worker, and a flexible team player who loves attacking new problems head-on. <br><br> In my free time I enjoy hanging out with my wife Jenni and cat Lucy.  I also play and write music, and my compositions and songs have been used by NBC, FOX Sports, A&E, Comedy Central, MTV, and others.',
         contactLinks: [
             { text: 'Email', url: '/' },

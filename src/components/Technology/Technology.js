@@ -7,7 +7,7 @@ class Technology extends Component {
         return (
             list.map(tech => {
                 return (
-                    <li>
+                    <li key={tech.name}>
                         <img src={tech.logo} alt={tech.name} />
                         <h4>{tech.name}</h4>
                     </li>

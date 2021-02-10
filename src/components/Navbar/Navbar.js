@@ -5,7 +5,11 @@ class Navbar extends Component {
     state = {  }
 
     linksList = this.props.navLinks.map(link => {
-        return <li><a href={link.url}>{link.text}</a></li>
+        return (
+            <li key={link.text}>
+                <a href={link.url}>{link.text}</a>
+            </li>
+        )
     })
 
     render() { 

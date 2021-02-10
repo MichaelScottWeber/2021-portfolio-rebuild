@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import HeroImage from '../HeroImage/HeroImage';
 
 class Hero extends Component {
     state = {  }
@@ -10,7 +11,7 @@ class Hero extends Component {
                     <h1>Bridging the creative and the technical to bring ideas to life</h1>
                     <a href="/">Let's create something together</a>
                 </div>
-                <img src="/" alt="Hero Image" />
+                <HeroImage />
             </header>
         );
     }

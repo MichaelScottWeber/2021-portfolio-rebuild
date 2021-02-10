@@ -5,7 +5,7 @@ class Skills extends Component {
 
     skillsList = this.props.skills.map(skill => {
         return (
-            <li>
+            <li key={skill.name}>
                 <img src={skill.icon} alt={skill.name} />
                 <h3>{skill.name}</h3>
                 <p>{skill.text}</p>
