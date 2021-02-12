@@ -21,11 +21,13 @@ class About extends Component {
         return (  
             <section className="About">
                 <h2>About</h2>
-                <div>
-                    <img src={this.props.headShot} alt="Michael Weber" />
-                    <ul>{this.contactLinksList}</ul>
+                <div className="about-container">
+                    <div className="img-contact-container">
+                        <img src={this.props.headShot} alt="Michael Weber" />
+                        <ul>{this.contactLinksList}</ul>
+                    </div>
+                    <div className="bio-container">{this.bio}</div>
                 </div>
-                <div>{this.bio}</div>
             </section>
         );
     }

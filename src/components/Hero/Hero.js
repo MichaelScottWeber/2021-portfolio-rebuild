@@ -7,9 +7,9 @@ class Hero extends Component {
         return (  
             <header className="Hero">
                 <div>
-                    <p>Michael Weber - Front End Developer</p>
-                    <h1>Bridging the creative and the technical to bring ideas to life</h1>
-                    <a href="/">Let's create something together</a>
+                    <p>Michael Weber | Front End Developer</p>
+                    <h1>Bridging the <span className="blue-text">creative</span> and the <span className="blue-text">technical</span> to bring ideas to life</h1>
+                    <a href="/">Let's create something together ></a>
                 </div>
                 <HeroImage />
             </header>

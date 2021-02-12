@@ -3,8 +3,8 @@ import Lightbulbs from '../../images/lightbulbs.png';
 
 export default  function HeroImage() {
     return (
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1000 1000" enableBackground="new 0 0 1000 1000" xmlSpace="preserve">
+        <svg className="HeroImage" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        viewBox="0 0 1000 1000" enableBackground="new 0 0 1000 1000" xmlSpace="preserve">
             <path fill="#F2E8A7" d="M472,875l-14-3l-6-2l-7-2l-11-5l-14-8l-13-10l-18-15l-16-21l-17-31l-12-27l-11-50l5-24l8-31l24-44l39-40
                 l21-13l36-10l52-2l35,4l28,5l18,8l30,14l12,13l8,7l8,9l6,10l6,10l6,15l3,8l6,23l2,18l2,20v32l-1,20l-3,9l-6,13l-6,12l-18,28l-17,19
                 l-24,21l-20,12l-21,9l-12,5L472,875z"/>
