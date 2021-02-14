@@ -6,7 +6,7 @@ class About extends Component {
     contactLinksList = this.props.contactLinks.map(link => {
         return (
             <li key={link.text}>
-                <a href={link.url}>{link.text}</a>
+                <a href={link.url}>{link.text} ></a>
             </li>
         )
     })

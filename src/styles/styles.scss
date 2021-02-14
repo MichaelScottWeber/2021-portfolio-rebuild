@@ -63,7 +63,55 @@ img {
     margin-left: $size5;
 }
 
+@keyframes twinkle1 {
+    0%, 100% {
+        opacity: 1;
+    }
 
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes twinkle2 {
+    0%, 100% {
+        opacity: .75;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes twinkle3 {
+    0%, 100% {
+        opacity: .5;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes twinkle4 {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .25;
+    }
+}
+
+@keyframes twinkle5 {
+    0%, 100% {
+        opacity: .75;
+    }
+
+    50% {
+        opacity: .25;
+    }
+}
 
  // Navbar
 
@@ -82,8 +130,19 @@ img {
         display: flex;
 
         li {
-            a:not(last-child) {
+            &:not(:last-child) {
                 margin-right: $size5;
+            }
+            a {
+                display: inline-block;
+                border-bottom: 2px solid $white;
+                transition: all .2s;
+                
+                &:hover {
+                    border-color: $secondary500;
+                    transform: translateY(-3px);
+                }
+
             }
         }
     }
@@ -118,10 +177,16 @@ img {
     }
 
     a {
+        display: inline-block;
         font-size: $fontSize6;
-        // text-decoration: underline;
         border-bottom: 2px solid $black;
         padding-bottom: $size1;
+        transition: all .2s;
+
+        &:hover {
+            border-color: $secondary500;
+            transform: translateY(-3px);
+        }
     }
 }
 
@@ -130,6 +195,24 @@ img {
 .HeroImage {
     align-self: end;
     max-height: 100%;
+
+    // .bulb-1-hover {
+    //     animation: twinkle 4s ease alternate infinite;
+    // }
+
+    // .bulb-2-hover {
+    //     animation: twinkle 3s ease alternate infinite;
+    // }
+
+    // .bulb-3-hover {
+    //     animation: twinkle 2s ease alternate infinite;
+    // }
+
+    // .bulb-1,
+    // .bulb-2,
+    // .bulb-3 {
+    //     opacity: 0;
+    // }
 }
 
 // Projects
@@ -152,6 +235,7 @@ img {
         .img-container {
             border-radius: 5px;
             margin-bottom: $size6;
+            cursor: pointer;
         }
 
         .title-link-container {
@@ -161,6 +245,14 @@ img {
 
             h3 {
                 margin-bottom: 0;
+                border-bottom: 2px solid $black;
+                transition: all .2s;
+                cursor: pointer;
+
+                &:hover {
+                    border-color: $secondary500;
+                    transform: translateY(-3px);
+                }
             }
         }
     }
@@ -182,7 +274,7 @@ img {
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin: $size7 $size6;
+            margin: $size7 $size5;
             // background-color: $primary100;
         }
     }
@@ -254,9 +346,17 @@ img {
                 margin-top: $size6;
 
                 a {
+                    display: inline-block;
                     color: $white;
                     text-transform: uppercase;
-                    font-size: $fontSize6;    
+                    font-size: $fontSize6;
+                    border-bottom: 2px solid $white;
+                    transition: all .2s;
+
+                    &:hover {
+                        border-color: $secondary500;
+                        transform: translateY(-3px);
+                    }
                 }
             }
         }
@@ -288,7 +388,15 @@ img {
         text-align: center;
 
         a {
-            color: $primary300;
+            display: inline-block;
+            color: $grey300;
+            border-bottom: 2px solid $black;
+            transition: all .2s;
+
+            &:hover {
+                border-color: $secondary500;
+                transform: translateY(-3px);
+            }
         }
     }
 }
