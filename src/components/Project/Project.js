@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 
 class Project extends Component {
-    state = { showInfo: false }
+    state = { 
+        showInfo: false,
+        isHover: false,
+    }
 
     projectClickHandler = () => {
         this.setState({ showInfo: !this.state.showInfo })
@@ -13,27 +17,48 @@ class Project extends Component {
         const projectView = () => {
             if (!this.state.showInfo) {
                 return (
-                    <div className="img-container" style={{backgroundColor: project.color}}>
+                    <motion.div 
+                        onClick={this.projectClickHandler}
+                        onMouseEnter={() => this.setState({isHover: true})}
+                        onMouseLeave={() => this.setState({isHover: false})}
+                        className={this.state.isHover ? 'img-container hover' : 'img-container'}
+                        style={{backgroundColor: project.color}}
+                    >
                         <img src={project.img1} alt={`Screenshots of ${project.name}`} />
-                    </div>
+                    </motion.div>
                 )
             } else {
                 return (
-                    <div className="img-container" style={{backgroundColor: project.color}}>
+                    <motion.div 
+                        onClick={this.projectClickHandler}
+                        onMouseEnter={() => this.setState({isHover: true})}
+                        onMouseLeave={() => this.setState({isHover: false})}
+                        className={this.state.isHover ? 'img-container hover' : 'img-container'}
+                        style={{backgroundColor: project.color}}
+                    >
                         <img src={project.img2} alt={`Screenshots of ${project.name}`} />
-                    </div>
+                        <div class="text-container">
+                            <p>{project.desc}</p>
+                            <div class="underline"></div>
+                            <p>Technologies include <br /> <span class="tech-text">{project.tech}</span></p>
+                        </div>
+                    </motion.div>
                 )
             }
         }
 
         return (  
             <li className="Project">
-                {/* <div className="img-container" style={{backgroundColor: project.color}}>
-                    <img src={project.img1} alt={`Screenshots of ${project.name}`} />
-                </div> */}
                 {projectView()}
                 <div className="title-link-container">
-                    <h3 onClick={this.projectClickHandler}>{project.name}</h3>
+                    <h3 
+                        onClick={this.projectClickHandler}
+                        onMouseEnter={() => this.setState({isHover: true})}
+                        onMouseLeave={() => this.setState({isHover: false})}
+                        className={this.state.isHover ? 'hover' : ''}
+                    >
+                        {project.name}
+                    </h3>
                     <div>
                         <a className="primary-btn" href={project.siteUrl}>View Site</a>
                         <a className="secondary-btn" href={project.sourceUrl}>Source Code</a>
