@@ -37,10 +37,10 @@ class Project extends Component {
                         style={{backgroundColor: project.color}}
                     >
                         <img src={project.img2} alt={`Screenshots of ${project.name}`} />
-                        <div class="text-container">
+                        <div className="text-container">
                             <p>{project.desc}</p>
                             <div class="underline"></div>
-                            <p>Technologies include <br /> <span class="tech-text">{project.tech}</span></p>
+                            <p>Technologies include <br /> <span className="tech-text">{project.tech}</span></p>
                         </div>
                     </motion.div>
                 )
@@ -51,18 +51,36 @@ class Project extends Component {
             <li className="Project">
                 {projectView()}
                 <div className="title-link-container">
-                    <h3 
+                    <motion.h3 
+                        whileHover={{ y: -3 }}
+                        whileTap={{ y: 3 }}
                         onClick={this.projectClickHandler}
                         onMouseEnter={() => this.setState({isHover: true})}
                         onMouseLeave={() => this.setState({isHover: false})}
                         className={this.state.isHover ? 'hover' : ''}
                     >
                         {project.name}
-                    </h3>
-                    <div>
-                        <a className="primary-btn" href={project.siteUrl}>View Site</a>
-                        <a className="secondary-btn" href={project.sourceUrl}>Source Code</a>
-                    </div>
+                    </motion.h3>
+                    <motion.div>
+                        <motion.a 
+                            whileTap={{ y: 3 }}
+                            className="primary-btn" 
+                            href={project.siteUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Site
+                        </motion.a>
+                        <motion.a 
+                            whileTap={{ y: 3 }}
+                            className="secondary-btn" 
+                            href={project.sourceUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Source Code
+                        </motion.a>
+                    </motion.div>
                 </div>
             </li>
         );

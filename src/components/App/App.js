@@ -155,7 +155,7 @@ class App extends Component {
             { logo: MongoDBLogo, name: 'MongoDB' },
         ],
         imageDesignTech: [
-            { logo: AdobeLogo, name: 'Adobe CC' },
+            { logo: AdobeLogo, name: 'AdobeCC' },
             { logo: PhotoshopLogo, name: 'Photoshop' },
             { logo: IllustratorLogo, name: 'Illustrator' },
             { logo: FigmaLogo, name: 'Figma' },
@@ -168,7 +168,7 @@ class App extends Component {
         ],
         miscTech: [
             { logo: AppleLogo, name: 'Apple' },
-            { logo: VSCodeLogo, name: 'VS Code' },
+            { logo: VSCodeLogo, name: 'VSCode' },
             { logo: GithubLogo, name: 'Github' },
             { logo: NpmLogo, name: 'NPM' },
             { logo: NetlifyLogo, name: 'Netlify' },
@@ -181,9 +181,9 @@ class App extends Component {
             'In my free time I enjoy hanging out with my wife Jenni and cat Lucy.  I also play and write music, and my compositions and songs have been used by NBC, FOX Sports, A&E, Comedy Central, MTV, and others.',
         ],
         contactLinks: [
-            { text: 'Email', url: '/' },
-            { text: 'LinkedIn', url: '/' },
-            { text: 'Github', url: '/' },
+            { text: 'Email', url: 'mailto:mscottweber@gmail.com' },
+            { text: 'LinkedIn', url: 'https://www.linkedin.com/in/michaelscottweber/' },
+            { text: 'Github', url: 'https://github.com/MichaelScottWeber' },
         ],
     }
     render() {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 
 class Technology extends Component {
     state = {  }
@@ -8,9 +9,13 @@ class Technology extends Component {
             list.map(tech => {
                 return (
                     <li key={tech.name}>
-                        <div>
+                        <motion.div 
+                            whileHover={{ y: -25 }}
+                            transition={{ duration: 0.2 }}
+                            className="tech-logo-container"
+                        >
                             <img src={tech.logo} alt={tech.name} />
-                        </div>
+                        </motion.div>
                         <h4>{tech.name}</h4>
                     </li>
                 )
@@ -20,7 +25,7 @@ class Technology extends Component {
 
     render() { 
         return (  
-            <section className="Technology">
+            <section className="Technology" id="tech">
                 <h2>Technology</h2>
                 <div className="techlist-container">
                     <h3>Front End</h3>

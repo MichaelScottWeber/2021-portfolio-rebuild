@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 
 class About extends Component {
     state = {  }
@@ -6,7 +7,15 @@ class About extends Component {
     contactLinksList = this.props.contactLinks.map(link => {
         return (
             <li key={link.text}>
-                <a href={link.url}>{link.text} ></a>
+                <motion.a 
+                    whileHover={{ y: -3 }}
+                    whileTap={{ y: 3 }}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {link.text} >
+                </motion.a>
             </li>
         )
     })
@@ -19,7 +28,7 @@ class About extends Component {
 
     render() { 
         return (  
-            <section className="About">
+            <section className="About" id="about">
                 <h2>About</h2>
                 <div className="about-container">
                     <div className="img-contact-container">

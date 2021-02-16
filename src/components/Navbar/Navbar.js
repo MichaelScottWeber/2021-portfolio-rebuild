@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { motion } from 'framer-motion';
 
 class Navbar extends Component {
     state = {  }
@@ -6,7 +7,14 @@ class Navbar extends Component {
     linksList = this.props.navLinks.map(link => {
         return (
             <li key={link.text}>
-                <a href={link.url}>{link.text}</a>
+                <motion.a 
+                    whileHover={{ y: -3 }}
+                    whileTap={{ y: 3 }}
+                    // transition={{ duration: 0.2 }}
+                    href={link.url}
+                >
+                    {link.text}
+                </motion.a>
             </li>
         )
     })

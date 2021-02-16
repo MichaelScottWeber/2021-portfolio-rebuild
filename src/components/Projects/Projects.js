@@ -3,9 +3,6 @@ import Project from '../Project/Project';
 
 class Projects extends Component {
     state = {  }
-
-
-
     projectList = this.props.projects.map(project => {
         return (
             <Project 
@@ -17,7 +14,7 @@ class Projects extends Component {
 
     render() { 
         return (  
-            <section className="Projects">
+            <section className="Projects" id="projects">
                 <h2>Projects</h2>
                 <ul>{this.projectList}</ul>
             </section>
