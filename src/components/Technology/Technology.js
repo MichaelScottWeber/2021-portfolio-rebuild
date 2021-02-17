@@ -11,7 +11,7 @@ class Technology extends Component {
                     <li key={tech.name}>
                         <motion.div 
                             whileHover={{ y: -25 }}
-                            transition={{ duration: 0.2 }}
+                            transition={{ type: 'spring', bounce: .4 }}
                             className="tech-logo-container"
                         >
                             <img src={tech.logo} alt={tech.name} />
@@ -31,10 +31,10 @@ class Technology extends Component {
                     <h3>Front End</h3>
                     <ul className="techlist">{this.techList(this.props.frontEndTech)}</ul>
                 </div>
-                <div className="techlist-container">
+                {/* <div className="techlist-container">
                     <h3>Back End</h3>
                     <ul className="techlist">{this.techList(this.props.backEndTech)}</ul>
-                </div>
+                </div> */}
                 <div className="techlist-container">
                     <h3>Image Design</h3>
                     <ul className="techlist">{this.techList(this.props.imageDesignTech)}</ul>

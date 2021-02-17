@@ -13,7 +13,7 @@ class Hero extends Component {
                     <motion.a 
                         whileHover={{ y: -3 }}
                         whileTap={{ y: 3 }}
-                        href="/"
+                        href="mailto:mscottweber@gmail.com"
                     >
                         Let's create something together >
                     </motion.a>

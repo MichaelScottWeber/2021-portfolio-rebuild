@@ -172,7 +172,7 @@ class App extends Component {
             { logo: GithubLogo, name: 'Github' },
             { logo: NpmLogo, name: 'NPM' },
             { logo: NetlifyLogo, name: 'Netlify' },
-            { logo: ThreeLogo, name: 'ThreeJS' },
+            // { logo: ThreeLogo, name: 'ThreeJS' },
             { logo: NetsuiteLogo, name: 'Netsuite' },
         ],
         headShot: HeadShot,

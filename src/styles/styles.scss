@@ -245,16 +245,68 @@ img {
         max-width: 550px;
         margin: $size8 $size3;
 
-        .img-container {
+        // === This is Project2 now ===
+
+        .card-outer-container {
             border-radius: 5px;
+            overflow: hidden;
             margin-bottom: $size6;
             cursor: pointer;
-            transition: $transition;
+            transition: .2s;
+
+            &.hover {
+                box-shadow: 0 0 2pt 2pt $secondary500;
+            }
+
+            .card-inner-container {
+                border-radius: 5px;
+                width: 1100px;
+                display: flex;
+
+                .img1-container {
+                    width: 550px;
+                    height: auto;
+                    display: inline-block;
+                }
+
+                .img2-container {
+                    width: 550px;
+                    height: auto;
+                    display: inline-block;
+                    position: relative;
+                }
+
+            }
         }
 
-        .img-container.hover {
-            box-shadow: 0 0 2pt 2pt $secondary500;
-        }
+        // ===== Ending Project2 ======
+        
+        // .animate-container {
+        //     overflow: hidden;
+        //     position: relative;
+        //     margin-bottom: $size6;
+        //     width: 550px;
+        //     height: 343px;
+        //     border-radius: 5px;
+        //     // transition: all .2s;
+
+        //     // &.hover {
+        //     //     box-shadow: 0 0 2pt 2pt $secondary500;
+        //     // }
+        // }
+
+        // .img-container {
+        //     border-radius: 5px;
+        //     cursor: pointer;
+        //     transition: $transition;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        // }
+
+        // // .img-container.hover {
+        // //     box-shadow: 0 0 2pt 2pt $secondary500;
+        // // }
 
         .text-container {
             padding: $size5;
@@ -335,7 +387,7 @@ img {
             flex-wrap: wrap;
 
             li {
-                margin: 0 $size5 $size5;;
+                margin: 0 $size5 $size6;;
                 position: relative;
 
                 div {
