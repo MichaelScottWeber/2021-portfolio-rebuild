@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { motion } from 'framer-motion';
 import HeroImage from '../HeroImage/HeroImage';
+import SectionBorder from '../SectionBorder/SectionBorder';
 
 class Hero extends Component {
     state = {  }
@@ -19,6 +20,7 @@ class Hero extends Component {
                     </motion.a>
                 </div>
                 <HeroImage />
+                {/* <SectionBorder /> */}
             </header>
         );
     }

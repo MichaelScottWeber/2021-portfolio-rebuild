@@ -10,6 +10,7 @@ import Skills from '../Skills/Skills';
 import Technology from '../Technology/Technology';
 import About from '../About/About';
 import Footer from '../Footer/Footer';
+import SectionBorder from '../SectionBorder/SectionBorder';
 
 // Project Images
 import FiveDayForecast1 from '../../images/5DayForecast.png';
@@ -192,8 +193,11 @@ class App extends Component {
                 <Navbar logo={this.state.logo} navLinks={this.state.navLinks} />
                 <main>
                     <Hero />
+                    <SectionBorder topColor="#FDFCFC" bottomColor="#EEECED"/>
                     <Projects projects={this.state.projects} />
+                    <SectionBorder topColor="#EEECED" bottomColor="#FDFCFC"/>
                     <Skills skills={this.state.skills} />
+                    <SectionBorder topColor="#FDFCFC" bottomColor="#EEECED"/>
                     <Technology
                         frontEndTech={this.state.frontEndTech}
                         backEndTech={this.state.backEndTech}
@@ -201,6 +205,7 @@ class App extends Component {
                         collaborationTech={this.state.collaborationTech}
                         miscTech={this.state.miscTech}
                     />
+                    <SectionBorder topColor="#EEECED" bottomColor="#231F20"/>
                     <About
                         headShot={this.state.headShot}
                         bio={this.state.bio}
