@@ -139,10 +139,16 @@ img {
     padding: $size2 $size8;
     z-index: 5;
 
+        a {
+            cursor: pointer;
+        }
+
     ul {
         display: flex;
 
         li {
+            // cursor: pointer;
+
             &:not(:last-child) {
                 margin-right: $size5;
             }
@@ -151,7 +157,7 @@ img {
                 border-bottom: 2px solid $white;
                 transition: all $transition;
                 
-                &:hover {
+                &:hover, &.active {
                     border-color: $secondary500;
                 }
 

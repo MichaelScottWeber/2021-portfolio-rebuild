@@ -64,10 +64,10 @@ class App extends Component {
     state = {
         logo: { img: 'LOGO', url: '#top' },
         navLinks: [
-            { text: 'Projects', url: '#projects' },
-            { text: 'Skills', url: '#skills' },
-            { text: 'Tech', url: '#tech' },
-            { text: 'About', url: '#about' },
+            { text: 'Projects', url: 'projects' },
+            { text: 'Skills', url: 'skills' },
+            { text: 'Tech', url: 'tech' },
+            { text: 'About', url: 'about' },
         ],
         projects: [
             {
